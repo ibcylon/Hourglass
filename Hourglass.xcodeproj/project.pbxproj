@@ -7,23 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D568FE2A274E31C600A2C06F /* 46436-sand-clock-timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */; };
+		D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE2B274F92B200A2C06F /* OnBoard.storyboard */; };
+		D568FE2E274F969F00A2C06F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */; };
+		D568FE30274F994C00A2C06F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */; };
+		D568FE33274FB26500A2C06F /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */; };
+		D568FE34274FB26500A2C06F /* WorkoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D568FE32274FB26500A2C06F /* WorkoutCollectionViewCell.xib */; };
+		D568FE3727520BAB00A2C06F /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE3627520BAB00A2C06F /* RealmModel.swift */; };
+		D568FE3A27528AB300A2C06F /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE3827528AB300A2C06F /* RoutineTableViewCell.swift */; };
+		D568FE3B27528AB300A2C06F /* RoutineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */; };
+		D568FE3D2753115900A2C06F /* RoutineDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */; };
+		D568FE3F2753117200A2C06F /* RoutineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */; };
+		D568FE412753185E00A2C06F /* RoutineDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */; };
+		D568FE432753267800A2C06F /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE422753267700A2C06F /* RealmQuery.swift */; };
 		D5CE6783274679860037CF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6782274679860037CF1B /* AppDelegate.swift */; };
 		D5CE6785274679860037CF1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6784274679860037CF1B /* SceneDelegate.swift */; };
-		D5CE6787274679860037CF1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6786274679860037CF1B /* ViewController.swift */; };
+		D5CE6787274679860037CF1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6786274679860037CF1B /* MainViewController.swift */; };
 		D5CE678A274679860037CF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE6788274679860037CF1B /* Main.storyboard */; };
 		D5CE678C274679870037CF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CE678B274679870037CF1B /* Assets.xcassets */; };
 		D5CE678F274679870037CF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE678D274679870037CF1B /* LaunchScreen.storyboard */; };
+		D5CE679827467EAE0037CF1B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679727467EAE0037CF1B /* Lottie */; };
+		D5CE679B27467ED10037CF1B /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679A27467ED10037CF1B /* FSCalendar */; };
+		D5CE679E27467EDB0037CF1B /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679D27467EDB0037CF1B /* Zip */; };
+		D5CE67A127467EE40037CF1B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67A027467EE40037CF1B /* SwiftyJSON */; };
+		D5CE67A8274680F30037CF1B /* 4923-spiral-timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67A7274680F30037CF1B /* 4923-spiral-timer.json */; };
+		D5CE67AD274BBF020037CF1B /* Shake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67AC274BBF020037CF1B /* Shake.storyboard */; };
+		D5CE67AF274BBF120037CF1B /* Routine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67AE274BBF120037CF1B /* Routine.storyboard */; };
+		D5CE67B1274BBF190037CF1B /* Diary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67B0274BBF190037CF1B /* Diary.storyboard */; };
+		D5CE67B3274BBF370037CF1B /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67B2274BBF370037CF1B /* Setting.storyboard */; };
+		D5CE67B5274BBF620037CF1B /* ShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67B4274BBF620037CF1B /* ShakeViewController.swift */; };
+		D5CE67B7274BBF690037CF1B /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */; };
+		D5CE67B9274BBF7F0037CF1B /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */; };
+		D5CE67BB274BBF880037CF1B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67BA274BBF880037CF1B /* SettingViewController.swift */; };
+		D5CE67BE274BC39E0037CF1B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67BD274BC39E0037CF1B /* Realm */; };
+		D5CE67C0274BC39E0037CF1B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67BF274BC39E0037CF1B /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "46436-sand-clock-timer.json"; sourceTree = "<group>"; };
+		D568FE2B274F92B200A2C06F /* OnBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoard.storyboard; sourceTree = "<group>"; };
+		D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutCollectionViewCell.swift; path = Hourglass/ViewController/WorkoutCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D568FE32274FB26500A2C06F /* WorkoutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WorkoutCollectionViewCell.xib; path = Hourglass/ViewController/WorkoutCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		D568FE3627520BAB00A2C06F /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		D568FE3827528AB300A2C06F /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
+		D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
+		D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineDetail.storyboard; sourceTree = "<group>"; };
+		D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailViewController.swift; sourceTree = "<group>"; };
+		D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D568FE422753267700A2C06F /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		D5CE677F274679860037CF1B /* Hourglass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hourglass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE6782274679860037CF1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5CE6784274679860037CF1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5CE6786274679860037CF1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5CE6786274679860037CF1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D5CE6789274679860037CF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5CE678B274679870037CF1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5CE678E274679870037CF1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5CE6790274679870037CF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CE67A7274680F30037CF1B /* 4923-spiral-timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4923-spiral-timer.json"; sourceTree = "<group>"; };
+		D5CE67AC274BBF020037CF1B /* Shake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shake.storyboard; sourceTree = "<group>"; };
+		D5CE67AE274BBF120037CF1B /* Routine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Routine.storyboard; sourceTree = "<group>"; };
+		D5CE67B0274BBF190037CF1B /* Diary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diary.storyboard; sourceTree = "<group>"; };
+		D5CE67B2274BBF370037CF1B /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		D5CE67B4274BBF620037CF1B /* ShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeViewController.swift; sourceTree = "<group>"; };
+		D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewController.swift; sourceTree = "<group>"; };
+		D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		D5CE67BA274BBF880037CF1B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +81,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CE67C0274BC39E0037CF1B /* RealmSwift in Frameworks */,
+				D5CE679E27467EDB0037CF1B /* Zip in Frameworks */,
+				D5CE679827467EAE0037CF1B /* Lottie in Frameworks */,
+				D5CE67A127467EE40037CF1B /* SwiftyJSON in Frameworks */,
+				D5CE679B27467ED10037CF1B /* FSCalendar in Frameworks */,
+				D5CE67BE274BC39E0037CF1B /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D568FE28274E319100A2C06F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		D568FE3527520B9C00A2C06F /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				D568FE3627520BAB00A2C06F /* RealmModel.swift */,
+				D568FE422753267700A2C06F /* RealmQuery.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		D5CE6776274679860037CF1B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +129,60 @@
 		D5CE6781274679860037CF1B /* Hourglass */ = {
 			isa = PBXGroup;
 			children = (
+				D568FE3527520B9C00A2C06F /* Realm */,
+				D5CE67AB274B59A10037CF1B /* Extension */,
+				D5CE67AA274B59950037CF1B /* ViewController */,
+				D5CE67A9274B59810037CF1B /* Storyboard */,
+				D5CE67A7274680F30037CF1B /* 4923-spiral-timer.json */,
 				D5CE6782274679860037CF1B /* AppDelegate.swift */,
 				D5CE6784274679860037CF1B /* SceneDelegate.swift */,
-				D5CE6786274679860037CF1B /* ViewController.swift */,
-				D5CE6788274679860037CF1B /* Main.storyboard */,
 				D5CE678B274679870037CF1B /* Assets.xcassets */,
-				D5CE678D274679870037CF1B /* LaunchScreen.storyboard */,
 				D5CE6790274679870037CF1B /* Info.plist */,
+				D568FE28274E319100A2C06F /* Support */,
 			);
 			path = Hourglass;
+			sourceTree = "<group>";
+		};
+		D5CE67A9274B59810037CF1B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D5CE6788274679860037CF1B /* Main.storyboard */,
+				D5CE678D274679870037CF1B /* LaunchScreen.storyboard */,
+				D5CE67AC274BBF020037CF1B /* Shake.storyboard */,
+				D568FE32274FB26500A2C06F /* WorkoutCollectionViewCell.xib */,
+				D5CE67AE274BBF120037CF1B /* Routine.storyboard */,
+				D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */,
+				D5CE67B0274BBF190037CF1B /* Diary.storyboard */,
+				D5CE67B2274BBF370037CF1B /* Setting.storyboard */,
+				D568FE2B274F92B200A2C06F /* OnBoard.storyboard */,
+				D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D5CE67AA274B59950037CF1B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */,
+				D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */,
+				D568FE3827528AB300A2C06F /* RoutineTableViewCell.swift */,
+				D5CE6786274679860037CF1B /* MainViewController.swift */,
+				D5CE67B4274BBF620037CF1B /* ShakeViewController.swift */,
+				D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */,
+				D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */,
+				D5CE67BA274BBF880037CF1B /* SettingViewController.swift */,
+				D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D5CE67AB274B59A10037CF1B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */,
+				D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +201,14 @@
 			dependencies = (
 			);
 			name = Hourglass;
+			packageProductDependencies = (
+				D5CE679727467EAE0037CF1B /* Lottie */,
+				D5CE679A27467ED10037CF1B /* FSCalendar */,
+				D5CE679D27467EDB0037CF1B /* Zip */,
+				D5CE67A027467EE40037CF1B /* SwiftyJSON */,
+				D5CE67BD274BC39E0037CF1B /* Realm */,
+				D5CE67BF274BC39E0037CF1B /* RealmSwift */,
+			);
 			productName = Hourglass;
 			productReference = D5CE677F274679860037CF1B /* Hourglass.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +237,13 @@
 				Base,
 			);
 			mainGroup = D5CE6776274679860037CF1B;
+			packageReferences = (
+				D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */,
+				D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = D5CE6780274679860037CF1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +258,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CE67B1274BBF190037CF1B /* Diary.storyboard in Resources */,
+				D5CE67AD274BBF020037CF1B /* Shake.storyboard in Resources */,
 				D5CE678F274679870037CF1B /* LaunchScreen.storyboard in Resources */,
+				D568FE34274FB26500A2C06F /* WorkoutCollectionViewCell.xib in Resources */,
+				D568FE2A274E31C600A2C06F /* 46436-sand-clock-timer.json in Resources */,
+				D568FE3D2753115900A2C06F /* RoutineDetail.storyboard in Resources */,
 				D5CE678C274679870037CF1B /* Assets.xcassets in Resources */,
+				D5CE67AF274BBF120037CF1B /* Routine.storyboard in Resources */,
+				D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */,
+				D5CE67A8274680F30037CF1B /* 4923-spiral-timer.json in Resources */,
 				D5CE678A274679860037CF1B /* Main.storyboard in Resources */,
+				D568FE3B27528AB300A2C06F /* RoutineTableViewCell.xib in Resources */,
+				D5CE67B3274BBF370037CF1B /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +281,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CE6787274679860037CF1B /* ViewController.swift in Sources */,
+				D5CE6787274679860037CF1B /* MainViewController.swift in Sources */,
 				D5CE6783274679860037CF1B /* AppDelegate.swift in Sources */,
+				D568FE3F2753117200A2C06F /* RoutineDetailViewController.swift in Sources */,
 				D5CE6785274679860037CF1B /* SceneDelegate.swift in Sources */,
+				D568FE3727520BAB00A2C06F /* RealmModel.swift in Sources */,
+				D568FE30274F994C00A2C06F /* UIColor+Extension.swift in Sources */,
+				D568FE33274FB26500A2C06F /* WorkoutCollectionViewCell.swift in Sources */,
+				D5CE67B5274BBF620037CF1B /* ShakeViewController.swift in Sources */,
+				D5CE67B9274BBF7F0037CF1B /* DiaryViewController.swift in Sources */,
+				D5CE67BB274BBF880037CF1B /* SettingViewController.swift in Sources */,
+				D568FE2E274F969F00A2C06F /* UIFont+Extension.swift in Sources */,
+				D568FE3A27528AB300A2C06F /* RoutineTableViewCell.swift in Sources */,
+				D568FE432753267800A2C06F /* RealmQuery.swift in Sources */,
+				D568FE412753185E00A2C06F /* RoutineDetailTableViewCell.swift in Sources */,
+				D5CE67B7274BBF690037CF1B /* RoutineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,13 +444,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJDR485DTV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hourglass/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,13 +473,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJDR485DTV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hourglass/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +491,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +517,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5CE679727467EAE0037CF1B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		D5CE679A27467ED10037CF1B /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		D5CE679D27467EDB0037CF1B /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+		D5CE67A027467EE40037CF1B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		D5CE67BD274BC39E0037CF1B /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		D5CE67BF274BC39E0037CF1B /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5CE6777274679860037CF1B /* Project object */;
 }
