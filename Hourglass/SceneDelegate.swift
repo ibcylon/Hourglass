@@ -18,6 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         window?.tintColor = .white
+        
+        UITabBar.appearance().unselectedItemTintColor = UIColor.lightGray
+        UITabBar.appearance().backgroundColor = .green
+        UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: -3)
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

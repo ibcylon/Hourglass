@@ -9,6 +9,7 @@ import UIKit
 import Lottie
 
 import SwiftUI
+import RealmSwift
 
 class MainViewController: UIViewController {
     
@@ -20,9 +21,12 @@ class MainViewController: UIViewController {
         return animView
     }()
     
+    let localRealm = try! Realm()
+    var tasks : Results<Routine>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.bgColor
         //Launch Screen
         view.addSubview(animationView)
         animationView.center = view.center
@@ -33,10 +37,17 @@ class MainViewController: UIViewController {
             
             print("finished")
             
+            
+            
             let sb = UIStoryboard(name: "Main", bundle: nil)
+            
             let vc = sb.instantiateViewController(withIdentifier: "MainTabBarController") //as! ShakeViewController
+            
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
+            
+
+            
             
         }
         

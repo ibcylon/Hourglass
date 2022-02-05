@@ -14,6 +14,7 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var workoutTitle: UILabel! {
         didSet {
             workoutTitle.text = "1"
+            
         }
     }
     
@@ -27,7 +28,7 @@ class WorkoutCollectionViewCell: UICollectionViewCell {
     private func uiSetting(){
         
         //font
-        workoutTitle?.font = UIFont.contentTitle
+        workoutTitle?.font = UIFont.smallTitle
         workoutTitle.textColor = .black
         workoutView?.layer.cornerRadius = 10
     

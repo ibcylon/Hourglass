@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>175884102490-mtg7vmsavq4bqe3lfc0sica63vohj4gu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.175884102490-mtg7vmsavq4bqe3lfc0sica63vohj4gu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAze3Hp1vmDA14bAhDwO2iLgvGo5xidELY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>175884102490</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kangho.Hourglass</string>
+	<key>PROJECT_ID</key>
+	<string>hourglass-b168c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hourglass-b168c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:175884102490:ios:4ae35da39f5be520446163</string>
+</dict>
+</plist>

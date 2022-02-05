@@ -10,6 +10,45 @@ import RealmSwift
 
 
 extension UIViewController {
+    
+    func getRoutineByName(routineName : String) -> Routine? {
+        let localRealm = try! Realm()
+        let routine = localRealm.objects(Routine.self).where {
+            $0.name.equals(routineName)
+        }.first
+        
+        
+        return routine
+    }
+    func getWorkoutNameList() -> Results<WorkoutName>{
+        let localRealm = try! Realm()
+        let workoutLists = localRealm.objects(WorkoutName.self)
+        
+        return workoutLists
+    }
+    
+   
+    func getWorkout(routineName : String, workoutName : String) -> Workout? {
+        let localRealm = try! Realm()
+        let routine = localRealm.objects(Routine.self).where { $0.name.equals(routineName) }.first
+        let workoutList = routine?.workoutList  //as? Results<List<Workout>>
+        let workout = workoutList?.where { $0.name.equals(workoutName)}.first
+        
+        return workout
+    }
+    
+//    func getSetByIndex(setList : Results<Sets>, index : Int) -> ResultsSets{
+//        let localRealm = try! Realm()
+//        let
+//    }
+    
+    func addSet(workout : Workout, set : Sets){
+        let localRealm = try! Realm()
+        
+        try! localRealm.write {
+            workout.setsList.append(set)
+        }
+    }
 }
 //    func searchQueryFromMemo(text: String) -> Results<Memo> {
 //
@@ -37,14 +76,7 @@ extension UIViewController {
 //        return count
 //    }
 //
-//    func insertQueryMemo(title: String,content:String ){
-//        let localRealm = try! Realm()
-//        let task = Memo(title: title, content: content, writeDate: Date())
 //
-//        try! localRealm.write {
-//            localRealm.add(task)
-//        }
-//    }
 //
 //    func deleteQueryMemo(task:Memo){
 //        let localRealm = try! Realm()

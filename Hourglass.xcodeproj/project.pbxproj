@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5148EAA27681A0A00A7DC51 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D5148EA927681A0A00A7DC51 /* FirebaseAnalytics */; };
+		D5148EAC27681A0A00A7DC51 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D5148EAB27681A0A00A7DC51 /* FirebaseCrashlytics */; };
+		D5148EAE27681B5100A7DC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */; };
+		D556D4F027AE8BBF00807AF5 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4EF27AE8BBF00807AF5 /* Zip */; };
+		D556D4F327AE8BE300807AF5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F227AE8BE300807AF5 /* Realm */; };
+		D556D4F527AE8BE300807AF5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F427AE8BE300807AF5 /* RealmSwift */; };
+		D556D4F827AE8BF900807AF5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F727AE8BF900807AF5 /* Lottie */; };
+		D556D4FA27AE9AD600807AF5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556D4F927AE9AD600807AF5 /* UIViewController+Extension.swift */; };
+		D556D4FC27AEAEA400807AF5 /* TabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556D4FB27AEAEA400807AF5 /* TabBar+Extension.swift */; };
 		D568FE2A274E31C600A2C06F /* 46436-sand-clock-timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */; };
 		D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE2B274F92B200A2C06F /* OnBoard.storyboard */; };
 		D568FE2E274F969F00A2C06F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */; };
@@ -20,16 +29,21 @@
 		D568FE3F2753117200A2C06F /* RoutineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */; };
 		D568FE412753185E00A2C06F /* RoutineDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */; };
 		D568FE432753267800A2C06F /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE422753267700A2C06F /* RealmQuery.swift */; };
+		D568FE4627545D1900A2C06F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = D568FE4527545D1900A2C06F /* PanModal */; };
+		D568FE4927548F3400A2C06F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D568FE4B27548F3400A2C06F /* Localizable.strings */; };
+		D568FE502754909400A2C06F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE4F2754909400A2C06F /* String+Extension.swift */; };
+		D568FE532759437D00A2C06F /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE522759437D00A2C06F /* AlertPresentable.swift */; };
+		D568FE55275974D600A2C06F /* SetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE54275974D600A2C06F /* SetsTableViewCell.swift */; };
+		D568FE572759FB1600A2C06F /* ModalSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE562759FB1600A2C06F /* ModalSelection.storyboard */; };
+		D568FE592759FD8400A2C06F /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE582759FD8400A2C06F /* ModalViewController.swift */; };
+		D568FE5B2759FF0500A2C06F /* ModalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE5A2759FF0500A2C06F /* ModalCollectionViewCell.swift */; };
+		D568FE5D275D179400A2C06F /* CustomUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE5C275D179400A2C06F /* CustomUITabBar.swift */; };
 		D5CE6783274679860037CF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6782274679860037CF1B /* AppDelegate.swift */; };
 		D5CE6785274679860037CF1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6784274679860037CF1B /* SceneDelegate.swift */; };
 		D5CE6787274679860037CF1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE6786274679860037CF1B /* MainViewController.swift */; };
 		D5CE678A274679860037CF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE6788274679860037CF1B /* Main.storyboard */; };
 		D5CE678C274679870037CF1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CE678B274679870037CF1B /* Assets.xcassets */; };
 		D5CE678F274679870037CF1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE678D274679870037CF1B /* LaunchScreen.storyboard */; };
-		D5CE679827467EAE0037CF1B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679727467EAE0037CF1B /* Lottie */; };
-		D5CE679B27467ED10037CF1B /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679A27467ED10037CF1B /* FSCalendar */; };
-		D5CE679E27467EDB0037CF1B /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE679D27467EDB0037CF1B /* Zip */; };
-		D5CE67A127467EE40037CF1B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67A027467EE40037CF1B /* SwiftyJSON */; };
 		D5CE67A8274680F30037CF1B /* 4923-spiral-timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67A7274680F30037CF1B /* 4923-spiral-timer.json */; };
 		D5CE67AD274BBF020037CF1B /* Shake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67AC274BBF020037CF1B /* Shake.storyboard */; };
 		D5CE67AF274BBF120037CF1B /* Routine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CE67AE274BBF120037CF1B /* Routine.storyboard */; };
@@ -39,11 +53,12 @@
 		D5CE67B7274BBF690037CF1B /* RoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */; };
 		D5CE67B9274BBF7F0037CF1B /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */; };
 		D5CE67BB274BBF880037CF1B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CE67BA274BBF880037CF1B /* SettingViewController.swift */; };
-		D5CE67BE274BC39E0037CF1B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67BD274BC39E0037CF1B /* Realm */; };
-		D5CE67C0274BC39E0037CF1B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5CE67BF274BC39E0037CF1B /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D556D4F927AE9AD600807AF5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D556D4FB27AEAEA400807AF5 /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
 		D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "46436-sand-clock-timer.json"; sourceTree = "<group>"; };
 		D568FE2B274F92B200A2C06F /* OnBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoard.storyboard; sourceTree = "<group>"; };
 		D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -55,8 +70,19 @@
 		D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
 		D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutineDetail.storyboard; sourceTree = "<group>"; };
 		D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailViewController.swift; sourceTree = "<group>"; };
-		D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RoutineDetailTableViewCell.swift; path = Hourglass/Routine/RoutineDetailTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D568FE422753267700A2C06F /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
+		D568FE4A27548F3400A2C06F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D568FE4C27548FE900A2C06F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		D568FE4D27548FE900A2C06F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D568FE4E27548FE900A2C06F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D568FE4F2754909400A2C06F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D568FE522759437D00A2C06F /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		D568FE54275974D600A2C06F /* SetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D568FE562759FB1600A2C06F /* ModalSelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ModalSelection.storyboard; path = Hourglass/Storyboard/ModalSelection.storyboard; sourceTree = SOURCE_ROOT; };
+		D568FE582759FD8400A2C06F /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		D568FE5A2759FF0500A2C06F /* ModalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalCollectionViewCell.swift; sourceTree = "<group>"; };
+		D568FE5C275D179400A2C06F /* CustomUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITabBar.swift; sourceTree = "<group>"; };
 		D5CE677F274679860037CF1B /* Hourglass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hourglass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CE6782274679860037CF1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5CE6784274679860037CF1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,12 +107,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CE67C0274BC39E0037CF1B /* RealmSwift in Frameworks */,
-				D5CE679E27467EDB0037CF1B /* Zip in Frameworks */,
-				D5CE679827467EAE0037CF1B /* Lottie in Frameworks */,
-				D5CE67A127467EE40037CF1B /* SwiftyJSON in Frameworks */,
-				D5CE679B27467ED10037CF1B /* FSCalendar in Frameworks */,
-				D5CE67BE274BC39E0037CF1B /* Realm in Frameworks */,
+				D556D4F527AE8BE300807AF5 /* RealmSwift in Frameworks */,
+				D556D4F827AE8BF900807AF5 /* Lottie in Frameworks */,
+				D5148EAA27681A0A00A7DC51 /* FirebaseAnalytics in Frameworks */,
+				D5148EAC27681A0A00A7DC51 /* FirebaseCrashlytics in Frameworks */,
+				D556D4F027AE8BBF00807AF5 /* Zip in Frameworks */,
+				D568FE4627545D1900A2C06F /* PanModal in Frameworks */,
+				D556D4F327AE8BE300807AF5 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +123,10 @@
 		D568FE28274E319100A2C06F /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */,
 				D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */,
+				D568FE4B27548F3400A2C06F /* Localizable.strings */,
+				D568FE522759437D00A2C06F /* AlertPresentable.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -108,6 +138,24 @@
 				D568FE422753267700A2C06F /* RealmQuery.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		D568FE512759426600A2C06F /* Routine */ = {
+			isa = PBXGroup;
+			children = (
+				D568FE562759FB1600A2C06F /* ModalSelection.storyboard */,
+				D568FE5A2759FF0500A2C06F /* ModalCollectionViewCell.swift */,
+				D568FE582759FD8400A2C06F /* ModalViewController.swift */,
+				D568FE54275974D600A2C06F /* SetsTableViewCell.swift */,
+				D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */,
+				D568FE3827528AB300A2C06F /* RoutineTableViewCell.swift */,
+				D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */,
+				D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */,
+				D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */,
+				D5CE67AE274BBF120037CF1B /* Routine.storyboard */,
+				D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */,
+			);
+			path = Routine;
 			sourceTree = "<group>";
 		};
 		D5CE6776274679860037CF1B = {
@@ -129,6 +177,7 @@
 		D5CE6781274679860037CF1B /* Hourglass */ = {
 			isa = PBXGroup;
 			children = (
+				D568FE512759426600A2C06F /* Routine */,
 				D568FE3527520B9C00A2C06F /* Realm */,
 				D5CE67AB274B59A10037CF1B /* Extension */,
 				D5CE67AA274B59950037CF1B /* ViewController */,
@@ -150,12 +199,9 @@
 				D5CE678D274679870037CF1B /* LaunchScreen.storyboard */,
 				D5CE67AC274BBF020037CF1B /* Shake.storyboard */,
 				D568FE32274FB26500A2C06F /* WorkoutCollectionViewCell.xib */,
-				D5CE67AE274BBF120037CF1B /* Routine.storyboard */,
-				D568FE3927528AB300A2C06F /* RoutineTableViewCell.xib */,
 				D5CE67B0274BBF190037CF1B /* Diary.storyboard */,
 				D5CE67B2274BBF370037CF1B /* Setting.storyboard */,
 				D568FE2B274F92B200A2C06F /* OnBoard.storyboard */,
-				D568FE3C2753115900A2C06F /* RoutineDetail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -163,15 +209,11 @@
 		D5CE67AA274B59950037CF1B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D568FE402753185E00A2C06F /* RoutineDetailTableViewCell.swift */,
 				D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */,
-				D568FE3827528AB300A2C06F /* RoutineTableViewCell.swift */,
 				D5CE6786274679860037CF1B /* MainViewController.swift */,
 				D5CE67B4274BBF620037CF1B /* ShakeViewController.swift */,
-				D5CE67B6274BBF690037CF1B /* RoutineViewController.swift */,
 				D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */,
 				D5CE67BA274BBF880037CF1B /* SettingViewController.swift */,
-				D568FE3E2753117200A2C06F /* RoutineDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -181,6 +223,10 @@
 			children = (
 				D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */,
 				D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */,
+				D568FE4F2754909400A2C06F /* String+Extension.swift */,
+				D556D4F927AE9AD600807AF5 /* UIViewController+Extension.swift */,
+				D556D4FB27AEAEA400807AF5 /* TabBar+Extension.swift */,
+				D568FE5C275D179400A2C06F /* CustomUITabBar.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -195,6 +241,7 @@
 				D5CE677B274679860037CF1B /* Sources */,
 				D5CE677C274679860037CF1B /* Frameworks */,
 				D5CE677D274679860037CF1B /* Resources */,
+				D5148EAF27681DA700A7DC51 /* Crashlytics Run Script */,
 			);
 			buildRules = (
 			);
@@ -202,12 +249,13 @@
 			);
 			name = Hourglass;
 			packageProductDependencies = (
-				D5CE679727467EAE0037CF1B /* Lottie */,
-				D5CE679A27467ED10037CF1B /* FSCalendar */,
-				D5CE679D27467EDB0037CF1B /* Zip */,
-				D5CE67A027467EE40037CF1B /* SwiftyJSON */,
-				D5CE67BD274BC39E0037CF1B /* Realm */,
-				D5CE67BF274BC39E0037CF1B /* RealmSwift */,
+				D568FE4527545D1900A2C06F /* PanModal */,
+				D5148EA927681A0A00A7DC51 /* FirebaseAnalytics */,
+				D5148EAB27681A0A00A7DC51 /* FirebaseCrashlytics */,
+				D556D4EF27AE8BBF00807AF5 /* Zip */,
+				D556D4F227AE8BE300807AF5 /* Realm */,
+				D556D4F427AE8BE300807AF5 /* RealmSwift */,
+				D556D4F727AE8BF900807AF5 /* Lottie */,
 			);
 			productName = Hourglass;
 			productReference = D5CE677F274679860037CF1B /* Hourglass.app */;
@@ -235,14 +283,15 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = D5CE6776274679860037CF1B;
 			packageReferences = (
-				D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */,
-				D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */,
-				D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				D568FE4427545D1900A2C06F /* XCRemoteSwiftPackageReference "PanModal" */,
+				D5148EA827681A0A00A7DC51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D556D4EE27AE8BBF00807AF5 /* XCRemoteSwiftPackageReference "Zip" */,
+				D556D4F127AE8BE300807AF5 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				D556D4F627AE8BF900807AF5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = D5CE6780274679860037CF1B /* Products */;
 			projectDirPath = "";
@@ -261,11 +310,14 @@
 				D5CE67B1274BBF190037CF1B /* Diary.storyboard in Resources */,
 				D5CE67AD274BBF020037CF1B /* Shake.storyboard in Resources */,
 				D5CE678F274679870037CF1B /* LaunchScreen.storyboard in Resources */,
+				D568FE4927548F3400A2C06F /* Localizable.strings in Resources */,
 				D568FE34274FB26500A2C06F /* WorkoutCollectionViewCell.xib in Resources */,
 				D568FE2A274E31C600A2C06F /* 46436-sand-clock-timer.json in Resources */,
+				D568FE572759FB1600A2C06F /* ModalSelection.storyboard in Resources */,
 				D568FE3D2753115900A2C06F /* RoutineDetail.storyboard in Resources */,
 				D5CE678C274679870037CF1B /* Assets.xcassets in Resources */,
 				D5CE67AF274BBF120037CF1B /* Routine.storyboard in Resources */,
+				D5148EAE27681B5100A7DC51 /* GoogleService-Info.plist in Resources */,
 				D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */,
 				D5CE67A8274680F30037CF1B /* 4923-spiral-timer.json in Resources */,
 				D5CE678A274679860037CF1B /* Main.storyboard in Resources */,
@@ -276,25 +328,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D5148EAF27681DA700A7DC51 /* Crashlytics Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILD_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Crashlytics Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${BUILD_DIR%Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5CE677B274679860037CF1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D568FE5B2759FF0500A2C06F /* ModalCollectionViewCell.swift in Sources */,
+				D568FE502754909400A2C06F /* String+Extension.swift in Sources */,
 				D5CE6787274679860037CF1B /* MainViewController.swift in Sources */,
 				D5CE6783274679860037CF1B /* AppDelegate.swift in Sources */,
 				D568FE3F2753117200A2C06F /* RoutineDetailViewController.swift in Sources */,
 				D5CE6785274679860037CF1B /* SceneDelegate.swift in Sources */,
 				D568FE3727520BAB00A2C06F /* RealmModel.swift in Sources */,
 				D568FE30274F994C00A2C06F /* UIColor+Extension.swift in Sources */,
+				D568FE592759FD8400A2C06F /* ModalViewController.swift in Sources */,
+				D556D4FC27AEAEA400807AF5 /* TabBar+Extension.swift in Sources */,
 				D568FE33274FB26500A2C06F /* WorkoutCollectionViewCell.swift in Sources */,
 				D5CE67B5274BBF620037CF1B /* ShakeViewController.swift in Sources */,
+				D568FE5D275D179400A2C06F /* CustomUITabBar.swift in Sources */,
 				D5CE67B9274BBF7F0037CF1B /* DiaryViewController.swift in Sources */,
 				D5CE67BB274BBF880037CF1B /* SettingViewController.swift in Sources */,
+				D568FE532759437D00A2C06F /* AlertPresentable.swift in Sources */,
+				D568FE55275974D600A2C06F /* SetsTableViewCell.swift in Sources */,
 				D568FE2E274F969F00A2C06F /* UIFont+Extension.swift in Sources */,
 				D568FE3A27528AB300A2C06F /* RoutineTableViewCell.swift in Sources */,
 				D568FE432753267800A2C06F /* RealmQuery.swift in Sources */,
 				D568FE412753185E00A2C06F /* RoutineDetailTableViewCell.swift in Sources */,
+				D556D4FA27AE9AD600807AF5 /* UIViewController+Extension.swift in Sources */,
 				D5CE67B7274BBF690037CF1B /* RoutineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,10 +384,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D568FE4B27548F3400A2C06F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D568FE4A27548F3400A2C06F /* en */,
+				D568FE4E27548FE900A2C06F /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D5CE6788274679860037CF1B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D5CE6789274679860037CF1B /* Base */,
+				D568FE4C27548FE900A2C06F /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -314,6 +406,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D5CE678E274679870037CF1B /* Base */,
+				D568FE4D27548FE900A2C06F /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -325,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -355,7 +449,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -386,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -444,6 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = SJDR485DTV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hourglass/Info.plist;
@@ -458,6 +554,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.Hourglass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -487,6 +584,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.Hourglass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -519,23 +617,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		D5148EA827681A0A00A7DC51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
+				minimumVersion = 8.0.0;
 			};
 		};
-		D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */ = {
+		D556D4EE27AE8BBF00807AF5 /* XCRemoteSwiftPackageReference "Zip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Zip.git";
 			requirement = {
@@ -543,54 +633,67 @@
 				kind = branch;
 			};
 		};
-		D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		D556D4F127AE8BE300807AF5 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+		D556D4F627AE8BF900807AF5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 10.20.0;
+				branch = master;
+				kind = branch;
+			};
+		};
+		D568FE4427545D1900A2C06F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D5CE679727467EAE0037CF1B /* Lottie */ = {
+		D5148EA927681A0A00A7DC51 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5CE679627467EAE0037CF1B /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
+			package = D5148EA827681A0A00A7DC51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
-		D5CE679A27467ED10037CF1B /* FSCalendar */ = {
+		D5148EAB27681A0A00A7DC51 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5CE679927467ED10037CF1B /* XCRemoteSwiftPackageReference "FSCalendar" */;
-			productName = FSCalendar;
+			package = D5148EA827681A0A00A7DC51 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
-		D5CE679D27467EDB0037CF1B /* Zip */ = {
+		D556D4EF27AE8BBF00807AF5 /* Zip */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5CE679C27467EDB0037CF1B /* XCRemoteSwiftPackageReference "Zip" */;
+			package = D556D4EE27AE8BBF00807AF5 /* XCRemoteSwiftPackageReference "Zip" */;
 			productName = Zip;
 		};
-		D5CE67A027467EE40037CF1B /* SwiftyJSON */ = {
+		D556D4F227AE8BE300807AF5 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5CE679F27467EE40037CF1B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		D5CE67BD274BC39E0037CF1B /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = D556D4F127AE8BE300807AF5 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = Realm;
 		};
-		D5CE67BF274BC39E0037CF1B /* RealmSwift */ = {
+		D556D4F427AE8BE300807AF5 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D5CE67BC274BC39E0037CF1B /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			package = D556D4F127AE8BE300807AF5 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		D556D4F727AE8BF900807AF5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D556D4F627AE8BF900807AF5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		D568FE4527545D1900A2C06F /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D568FE4427545D1900A2C06F /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

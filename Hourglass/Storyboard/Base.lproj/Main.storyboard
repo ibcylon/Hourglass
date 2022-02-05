@@ -45,13 +45,14 @@
             </objects>
             <point key="canvasLocation" x="1574.6376811594205" y="-21.428571428571427"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--CustomUI Tab Bar-->
         <scene sceneID="ro8-0o-jTk">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="kv2-OJ-PB0" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="kv2-OJ-PB0" customClass="customUITabBar" customModule="Hourglass" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vSK-A5-MIe"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nda-XU-ACs">
+                    <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="Nda-XU-ACs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

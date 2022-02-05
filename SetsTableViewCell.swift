@@ -1,13 +1,13 @@
 //
-//  RoutineDetailTableViewCell.swift
+//  SetsTableViewCell.swift
 //  Hourglass
 //
-//  Created by Kanghos on 2021/11/28.
+//  Created by Kanghos on 2021/12/03.
 //
 
 import UIKit
 
-class RoutineDetailTableViewCell: UITableViewCell {
+class SetsTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
