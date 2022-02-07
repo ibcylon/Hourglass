@@ -11,9 +11,16 @@ import RealmSwift
 class ShakeViewController: UIViewController
 {
     //Routine
-    var routineIndex : Int = 0
+    var routineIndex : Int = 0 {
+        didSet {
+            selectedCellIndex = 0
+            shakeButton.isSelected = false
+        }
+    }
+    
     let localRealm = try! Realm()
     var tasks : Results<Routine>!
+    var timerManager = TimerManager.shared
     
     //테스트 용 데이터
     var routine : Routine?
@@ -25,11 +32,7 @@ class ShakeViewController: UIViewController
     @IBOutlet weak var shakeButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    @IBOutlet weak var timerLabel: UILabel! {
-        didSet {
-            timerLabel.text = "00 : 00"
-        }
-    }
+    @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var timerStateImage: UIImageView!
     @IBOutlet weak var workoutView: UIView!
@@ -38,24 +41,29 @@ class ShakeViewController: UIViewController
     @IBOutlet weak var sceneTitleLabel: UILabel!
     
     var timer: Timer?
-    var timeLeft: Int = 5
+    var timeLeft: Int = 5 {
+        didSet {
+            timerLabel.text = timerManager.timeString
+        }
+    }
     
     var selectedCellIndex = 0 {
         
         didSet {
             
-            collectionView.collectionViewLayout.invalidateLayout()//reloadData()
+            //레이아웃 변경
+            collectionView.collectionViewLayout.invalidateLayout()
+            //데이터 변경
+            //reloadData()
         }
     }
-    
     override var canBecomeFirstResponder: Bool {
         get {
             return true
         }
     }
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         
         //motionResponder 등록
@@ -68,34 +76,19 @@ class ShakeViewController: UIViewController
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let nibName = UINib(nibName: "WorkoutCollectionViewCell", bundle: nil)
-        collectionView.register(nibName, forCellWithReuseIdentifier: WorkoutCollectionViewCell.identifer)
+        workoutDataPicker.isUserInteractionEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
         refreshRoutine()
-        
-        //        tasks = localRealm.objects(Routine.self)
-        //        guard let currentRoutine = tasks.first else {
-        //            showDefaultAlert(title: "Wait", message: "Make the routine first !", actionTitle: "OK")
-        //
-        //
-        //            return
-        //        }
-        //        routine = currentRoutine
-        //        //print(routine.workoutList.first)
-        //        collectionView.reloadData()
-        //        workoutDataPicker.reloadAllComponents()
-        //
-        //
-        //        routineLabel.text = currentRoutine.name
-        
     }
     
     private func uiSetting() {
         
+        let nibName = UINib(nibName: "WorkoutCollectionViewCell", bundle: nil)
+        collectionView.register(nibName, forCellWithReuseIdentifier: WorkoutCollectionViewCell.identifer)
         //Font
         timerLabel.font = UIFont.timerFont
         timerLabel.textColor = .black
@@ -114,6 +107,8 @@ class ShakeViewController: UIViewController
         shakeButton.backgroundColor = UIColor.contentFortePink
         timerView.backgroundColor = .clear
         
+        timerLabel.text = "00 : 00"
+        
         workoutView.backgroundColor = UIColor.contentPink
         workoutView.layer.cornerRadius = 15
         
@@ -121,46 +116,35 @@ class ShakeViewController: UIViewController
     }
     
     func startTimer(){
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: true)
-        timerStateImage.image = UIImage(systemName: "pause")
         
-    }
-    
-    func stopTimer(){
-        timer?.invalidate()
-        timerStateImage.image = UIImage(systemName: "play.fill")
-        
-    }
-    
-    func resetTimer(){
-        timer?.invalidate()
-        timeLeft = routine?.workoutList[selectedCellIndex].setsList[workoutDataPicker.selectedRow(inComponent: 0)].sec ?? 0
-        timerStateImage.image = UIImage(systemName: "play.fill")
-    }
-    
-    private func secondsToString(sec: Double) -> String {
-        guard sec.isNaN == false else { return "00 : 00" }
-        let totalSeconds = Int(sec)
-        let min = totalSeconds / 60
-        let seconds = totalSeconds % 60
-        return String(format: "%02d : %02d", min, seconds)
-    }
-    
-    @objc func fire(){
-        print("Fire")
-        
-        timeLeft -= 1
-        
-        //시간
-        timerLabel.text = secondsToString(sec: Double(timeLeft))
-        
-        if timeLeft < 1 {
-            
-            timer?.invalidate()
-            print("time Out!")
-            resetTimer()
-            updateWorkoutInfo()
+        //Routine 체크
+        guard tasks.first != nil else {
+            showDefaultAlert(title: "Wait", message: "Make the routine first !", actionTitle: "OK")
+            return
         }
+        
+        //타이머 실행
+        shakeButton.isSelected = !shakeButton.isSelected
+        let isStarted = shakeButton.isSelected
+        if isStarted {
+            guard let currentSetTime = routine?.workoutList[selectedCellIndex].setsList[workoutDataPicker.selectedRow(inComponent: 0)].sec else { return }
+            let duration = TimeInterval(currentSetTime)
+            timerStateImage.image = UIImage(systemName: "pause")
+            timerManager.startTimer(duration: duration) { [unowned self] timeString, remaining in
+                self.timerLabel.text = timeString
+                
+                if remaining <= 0 {
+                    
+                    //시작
+                }
+                
+            }
+        } else {
+            timerStateImage.image = UIImage(systemName: "play.fill")
+            timerManager.stopTimer()
+            timerLabel.text = timerManager.timeString
+        }
+        UIImpactFeedbackGenerator(style: .rigid).impactOccurred()
     }
     
     func hapticGenerator(){
@@ -175,24 +159,9 @@ class ShakeViewController: UIViewController
     // Enable detection of shake motion
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?){
         
-        guard tasks.first != nil else {
-            showDefaultAlert(title: "Wait", message: "Make the routine first !", actionTitle: "OK")
-            
-            
-            return
-        }
-        
         if motion == .motionShake {
             hapticGenerator()
-            //self.view.backgroundColor = .systemOrange
-            if timer?.isValid != true {
-                startTimer()
-            } else {
-                print("Already started!")
-                stopTimer()
-            }
-            
-            print("Why are you shaking me?")
+            startTimer()
         }
     }
     
@@ -200,14 +169,13 @@ class ShakeViewController: UIViewController
     /// 타이머가 만료되면 다음 세트 또는 다음 운동으로 갱신한다.
     /// 피커뷰를 다음 세트로 갱신한다. 만약 마지막 세트라면, 다음 운동으로 변경하고 첫 세트로 변경한다.
     /// 마지막 운동의 마지막 세트라면 운동이 완료되었다는 모달을 출력한다.
-    ///
     func updateWorkoutInfo(){
         
         print(selectedCellIndex)
         
-        let selectedRow = workoutDataPicker.selectedRow(inComponent: 0)
-        
-        if selectedRow == (routine?.workoutList[selectedCellIndex].setsList.count ?? 1) - 1 {
+        let currentSetIndex = workoutDataPicker.selectedRow(inComponent: 0)
+        guard let currentSetsCount = routine?.workoutList[selectedCellIndex].setsList.count else { return }
+        if currentSetIndex == currentSetsCount - 1 {
             
             //마지막 운동이면
             if selectedCellIndex == (routine?.workoutList.count ?? 1) - 1 {
@@ -221,7 +189,7 @@ class ShakeViewController: UIViewController
             }
             
         } else {
-            workoutDataPicker.selectRow(selectedRow + 1, inComponent: 0, animated: true)
+            workoutDataPicker.selectRow(currentSetIndex + 1, inComponent: 0, animated: true)
         }
         
     }
@@ -262,34 +230,31 @@ class ShakeViewController: UIViewController
     
     @IBAction func timerButtonClicked(_ sender: UIButton) {
         
-        guard tasks.first != nil else {
-            showDefaultAlert(title: "Wait", message: "Make the routine first !", actionTitle: "OK")
-            
-           return
-        }
-        
-        if timer?.isValid == true {
-            resetTimer()
-        } else {
-            startTimer()
-        }
+        print(sender.isSelected)
+        startTimer()
     }
     
     @IBAction func leftRoutineButtonClicked(_ sender: UIButton) {
         if routineIndex > 0 {
             routineIndex -= 1
+            selectedCellIndex = 0
             refreshRoutine()
         }
     }
     
     @IBAction func rightRoutineButtonClicked(_ sender: UIButton) {
-        if routineIndex < tasks.count - 1 {
+        print(routineIndex, tasks.count)
+        if routineIndex < tasks.count {
             routineIndex += 1
+            selectedCellIndex = 0
             refreshRoutine()
         }
     }
     
 }
+
+
+
 
 //pickerView extension
 extension ShakeViewController : UIPickerViewDelegate, UIPickerViewDataSource {

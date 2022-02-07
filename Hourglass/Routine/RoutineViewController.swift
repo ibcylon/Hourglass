@@ -44,14 +44,6 @@ class RoutineViewController: UIViewController {
         task = localRealm.objects(Routine.self)
         tableView.reloadData()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print(#function)
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        print(#function)
-    }
     func uiSetting(){
         
         //font

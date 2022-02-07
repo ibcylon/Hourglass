@@ -37,14 +37,14 @@ class customUITabBar: UITabBarController {
         super.viewWillAppear(true)
         
         
-        if self.localRealm.objects(Routine.self).first == nil {
-            
-            self.selectedIndex = 1
-        } else {
-            
-            self.selectedIndex = 0
-            
-        }
+//        if self.localRealm.objects(Routine.self).first == nil {
+//
+//            self.selectedIndex = 1
+//        } else {
+//
+//            self.selectedIndex = 0
+//
+//        }
         
     }
    

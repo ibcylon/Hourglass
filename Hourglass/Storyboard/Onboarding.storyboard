@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="Hourglass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-N3-3jt">
+                                <rect key="frame" x="30" y="712" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gRi-iN-cO3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5A-Hs-RdK">
+                                <rect key="frame" x="50" y="244" width="314" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="O1Z-p4-iqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HhR-FS-DLj">
+                                <rect key="frame" x="60" y="375.5" width="74" height="71.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="xLD-5C-rys"/>
+                                    <constraint firstAttribute="height" constant="74" id="z0R-Yp-uVa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list.number" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4zs-3o-wI1">
+                                <rect key="frame" x="60" y="460" width="74" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="4nU-Iq-J7y"/>
+                                    <constraint firstAttribute="width" constant="74" id="jFs-cf-rRy"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="이제는 간편하게 흔들어서 타이머를 실행시키세요!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="53X-dg-0VK">
+                                <rect key="frame" x="142" y="386" width="222" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ufx-ZF-Iag"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="무게, 횟수, 시간초를 설정하여 세트를 만들고, 이를 조합하여 자신만의 루틴을 만들어 보세요!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cz4-oc-gej">
+                                <rect key="frame" x="142" y="458" width="222" height="74"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="WLG-Rm-7qg"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="53X-dg-0VK" firstAttribute="centerY" secondItem="HhR-FS-DLj" secondAttribute="centerY" id="1ew-XN-qX3"/>
+                            <constraint firstItem="Cz4-oc-gej" firstAttribute="centerY" secondItem="4zs-3o-wI1" secondAttribute="centerY" id="4cu-Uu-zGI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="G1h-N3-3jt" secondAttribute="bottom" constant="100" id="9tr-He-gfP"/>
+                            <constraint firstItem="4zs-3o-wI1" firstAttribute="top" secondItem="HhR-FS-DLj" secondAttribute="bottom" constant="10" id="C7M-is-50k"/>
+                            <constraint firstItem="53X-dg-0VK" firstAttribute="leading" secondItem="HhR-FS-DLj" secondAttribute="trailing" constant="8" symbolic="YES" id="GS2-IU-a5W"/>
+                            <constraint firstItem="t5A-Hs-RdK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="Mb0-d2-vb3"/>
+                            <constraint firstItem="t5A-Hs-RdK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="NYa-hO-RY7"/>
+                            <constraint firstItem="HhR-FS-DLj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="R2t-KW-Gac"/>
+                            <constraint firstItem="G1h-N3-3jt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RCE-36-JqR"/>
+                            <constraint firstItem="G1h-N3-3jt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="ah1-7p-1HI"/>
+                            <constraint firstItem="HhR-FS-DLj" firstAttribute="top" secondItem="t5A-Hs-RdK" secondAttribute="bottom" constant="50" id="bMa-Kv-8q7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cz4-oc-gej" secondAttribute="trailing" constant="50" id="bla-0p-HJD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="53X-dg-0VK" secondAttribute="trailing" constant="50" id="dog-sj-6xG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="t5A-Hs-RdK" secondAttribute="trailing" constant="50" id="oHu-0z-BE8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="G1h-N3-3jt" secondAttribute="trailing" constant="30" id="umK-k2-qvg"/>
+                            <constraint firstItem="Cz4-oc-gej" firstAttribute="leading" secondItem="4zs-3o-wI1" secondAttribute="trailing" constant="8" symbolic="YES" id="umh-y1-OP7"/>
+                            <constraint firstItem="4zs-3o-wI1" firstAttribute="leading" secondItem="HhR-FS-DLj" secondAttribute="leading" id="xrn-Fw-7wK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationButton" destination="G1h-N3-3jt" id="N8c-T7-dHG"/>
+                        <outlet property="routineIcon" destination="4zs-3o-wI1" id="Qk2-0r-gRe"/>
+                        <outlet property="routineTextView" destination="Cz4-oc-gej" id="L7G-iR-HK5"/>
+                        <outlet property="shakeIcon" destination="HhR-FS-DLj" id="vam-tC-fNZ"/>
+                        <outlet property="shakeTextView" destination="53X-dg-0VK" id="dai-g6-Vv1"/>
+                        <outlet property="titleLabel" destination="t5A-Hs-RdK" id="6gb-TT-Toi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="-95.089285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

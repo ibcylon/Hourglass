@@ -11,6 +11,20 @@ import Lottie
 import SwiftUI
 import RealmSwift
 
+enum ViewControllerID: String {
+    case Onboarding
+    case Main
+    
+    var ID: String {
+        switch self {
+        case .Onboarding:
+            return "OnboardingViewController"
+        case .Main:
+            return "MainTabBarController"
+        }
+    }
+}
+
 class MainViewController: UIViewController {
     
     //Lottie Animaiton
@@ -23,6 +37,7 @@ class MainViewController: UIViewController {
     
     let localRealm = try! Realm()
     var tasks : Results<Routine>?
+    var viewControllerID: ViewControllerID!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +49,7 @@ class MainViewController: UIViewController {
         
         animationView.play { (finish) in
             self.animationView.removeFromSuperview()
-            
             print("finished")
-            
-            
             
             let sb = UIStoryboard(name: "Main", bundle: nil)
             
@@ -45,14 +57,38 @@ class MainViewController: UIViewController {
             
             vc.modalPresentationStyle = .fullScreen
             self.present(vc, animated: true, completion: nil)
-            
-
-            
-            
+//
+//
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") //as! customUITabBar
+//
+//            vc.modalPresentationStyle = .fullScreen
+//            self.present(vc, animated: true, completion: nil)
+//
+//            return
+//
+//            if Storage.isFirstTime() {
+//                self.viewControllerID = .Onboarding
+//                self.setStartViewController(storyboard: self.viewControllerID.rawValue, identifier: self.viewControllerID.ID)
+//
+//            } else {
+//                //                self.viewControllerID = .Main
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! customUITabBar
+//                vc.modalPresentationStyle = .fullScreen
+//                self.present(vc, animated: true, completion: nil)
+//
+//
+//            }
         }
-        
     }
     
+    func setStartViewController(storyboard: String, identifier: String){
+        let sb = UIStoryboard(name: storyboard, bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: identifier)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
     
     
 }

@@ -10,14 +10,17 @@
 		D5148EAA27681A0A00A7DC51 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D5148EA927681A0A00A7DC51 /* FirebaseAnalytics */; };
 		D5148EAC27681A0A00A7DC51 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D5148EAB27681A0A00A7DC51 /* FirebaseCrashlytics */; };
 		D5148EAE27681B5100A7DC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */; };
+		D548216F27AFC1A800420F49 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D548216E27AFC1A800420F49 /* Storage.swift */; };
+		D548217127AFC41600420F49 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D548217027AFC41600420F49 /* OnboardingViewController.swift */; };
 		D556D4F027AE8BBF00807AF5 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4EF27AE8BBF00807AF5 /* Zip */; };
 		D556D4F327AE8BE300807AF5 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F227AE8BE300807AF5 /* Realm */; };
 		D556D4F527AE8BE300807AF5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F427AE8BE300807AF5 /* RealmSwift */; };
 		D556D4F827AE8BF900807AF5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D556D4F727AE8BF900807AF5 /* Lottie */; };
 		D556D4FA27AE9AD600807AF5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556D4F927AE9AD600807AF5 /* UIViewController+Extension.swift */; };
 		D556D4FC27AEAEA400807AF5 /* TabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556D4FB27AEAEA400807AF5 /* TabBar+Extension.swift */; };
+		D556D4FE27AEDD2800807AF5 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556D4FD27AEDD2800807AF5 /* TimerManager.swift */; };
 		D568FE2A274E31C600A2C06F /* 46436-sand-clock-timer.json in Resources */ = {isa = PBXBuildFile; fileRef = D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */; };
-		D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE2B274F92B200A2C06F /* OnBoard.storyboard */; };
+		D568FE2C274F92B200A2C06F /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D568FE2B274F92B200A2C06F /* Onboarding.storyboard */; };
 		D568FE2E274F969F00A2C06F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */; };
 		D568FE30274F994C00A2C06F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */; };
 		D568FE33274FB26500A2C06F /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */; };
@@ -57,10 +60,13 @@
 
 /* Begin PBXFileReference section */
 		D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D548216E27AFC1A800420F49 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		D548217027AFC41600420F49 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D556D4F927AE9AD600807AF5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		D556D4FB27AEAEA400807AF5 /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
+		D556D4FD27AEDD2800807AF5 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "46436-sand-clock-timer.json"; sourceTree = "<group>"; };
-		D568FE2B274F92B200A2C06F /* OnBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoard.storyboard; sourceTree = "<group>"; };
+		D568FE2B274F92B200A2C06F /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		D568FE2D274F969F00A2C06F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		D568FE2F274F994C00A2C06F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D568FE31274FB26500A2C06F /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutCollectionViewCell.swift; path = Hourglass/ViewController/WorkoutCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -123,6 +129,8 @@
 		D568FE28274E319100A2C06F /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D556D4FD27AEDD2800807AF5 /* TimerManager.swift */,
+				D548216E27AFC1A800420F49 /* Storage.swift */,
 				D5148EAD27681B5100A7DC51 /* GoogleService-Info.plist */,
 				D568FE29274E31C600A2C06F /* 46436-sand-clock-timer.json */,
 				D568FE4B27548F3400A2C06F /* Localizable.strings */,
@@ -201,7 +209,7 @@
 				D568FE32274FB26500A2C06F /* WorkoutCollectionViewCell.xib */,
 				D5CE67B0274BBF190037CF1B /* Diary.storyboard */,
 				D5CE67B2274BBF370037CF1B /* Setting.storyboard */,
-				D568FE2B274F92B200A2C06F /* OnBoard.storyboard */,
+				D568FE2B274F92B200A2C06F /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -214,6 +222,7 @@
 				D5CE67B4274BBF620037CF1B /* ShakeViewController.swift */,
 				D5CE67B8274BBF7F0037CF1B /* DiaryViewController.swift */,
 				D5CE67BA274BBF880037CF1B /* SettingViewController.swift */,
+				D548217027AFC41600420F49 /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -318,7 +327,7 @@
 				D5CE678C274679870037CF1B /* Assets.xcassets in Resources */,
 				D5CE67AF274BBF120037CF1B /* Routine.storyboard in Resources */,
 				D5148EAE27681B5100A7DC51 /* GoogleService-Info.plist in Resources */,
-				D568FE2C274F92B200A2C06F /* OnBoard.storyboard in Resources */,
+				D568FE2C274F92B200A2C06F /* Onboarding.storyboard in Resources */,
 				D5CE67A8274680F30037CF1B /* 4923-spiral-timer.json in Resources */,
 				D5CE678A274679860037CF1B /* Main.storyboard in Resources */,
 				D568FE3B27528AB300A2C06F /* RoutineTableViewCell.xib in Resources */,
@@ -364,8 +373,11 @@
 				D568FE3727520BAB00A2C06F /* RealmModel.swift in Sources */,
 				D568FE30274F994C00A2C06F /* UIColor+Extension.swift in Sources */,
 				D568FE592759FD8400A2C06F /* ModalViewController.swift in Sources */,
+				D548216F27AFC1A800420F49 /* Storage.swift in Sources */,
+				D556D4FE27AEDD2800807AF5 /* TimerManager.swift in Sources */,
 				D556D4FC27AEAEA400807AF5 /* TabBar+Extension.swift in Sources */,
 				D568FE33274FB26500A2C06F /* WorkoutCollectionViewCell.swift in Sources */,
+				D548217127AFC41600420F49 /* OnboardingViewController.swift in Sources */,
 				D5CE67B5274BBF620037CF1B /* ShakeViewController.swift in Sources */,
 				D568FE5D275D179400A2C06F /* CustomUITabBar.swift in Sources */,
 				D5CE67B9274BBF7F0037CF1B /* DiaryViewController.swift in Sources */,
@@ -466,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -522,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

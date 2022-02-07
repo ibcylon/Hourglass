@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -159,7 +158,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk4-sU-2ZE">
-                                <rect key="frame" x="118" y="109" width="17.5" height="50"/>
+                                <rect key="frame" x="256.5" y="109" width="17.5" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="17.5" id="4VT-s1-Q3d"/>
                                     <constraint firstAttribute="height" constant="50" id="c4D-im-PgE"/>
@@ -170,9 +169,10 @@
                                     <action selector="rightRoutineButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0OA-bY-g5g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Ky-gnB">
-                                <rect key="frame" x="66.5" y="109" width="41.5" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNS-Ky-gnB">
+                                <rect key="frame" x="66.5" y="109" width="180" height="50"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Hhi-eV-6xn"/>
                                     <constraint firstAttribute="height" constant="50" id="QNI-iw-OkK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
